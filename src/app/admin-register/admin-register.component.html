@@ -1,0 +1,45 @@
+<head></head>
+<body>
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form #form="ngForm" novalidate (ngSubmit)="OnSubmit(form)">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">CompanyCIN</span>
+            <input type="text" class="form-control" name="companyCIN" id="companyCIN" placeholder="companyCIN" [(ngModel)]="model.companyCIN" #CompanyCIN="ngModel" required [ngClass]="{'is-invalid' : form.submitted && CompanyCIN.invalid}">
+          </div>
+          <div class="input-box">
+            <span class="details">UserName</span>
+            <input type="text" class="form-control" name="userName" id="userName" placeholder="UserName" [(ngModel)]="model.userName" #Username="ngModel" required [ngClass]="{'is-invalid' : form.submitted && Username.invalid}">
+          </div>
+          <div class="input-box">
+            <span class="details">CompanyName</span>
+            <input type="text" class="form-control" name="companyName" id="companyName" placeholder="CompanyName" [(ngModel)]="model.companyName" #CompanyName="ngModel" required [ngClass]="{'is-invalid' : form.submitted && CompanyName.invalid}">
+          </div>
+          <div class="input-box">
+            <span class="details">PhoneNumber</span>
+            <input type="text" class="form-control" name="phone" id="phone" placeholder="phone" [(ngModel)]="model.phone" #Phone="ngModel" required [ngClass]="{'is-invalid' : form.submitted && Phone.invalid}">
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" class="form-control" name="email" id="email" placeholder="Email" [(ngModel)]="model.email" #Email="ngModel" required [ngClass]="{'is-invalid' : form.submitted && Email.invalid}">
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" class="form-control" name="password" id="password" placeholder="Password" [(ngModel)]="model.password" #Password="ngModel" required [ngClass]="{'is-invalid' : form.submitted && Password.invalid}">
+          </div>
+          <div class="input-box">
+            <span class="details">location</span>
+            <input type="text" class="form-control" name="location" id="location" placeholder="Location" [(ngModel)]="model.location" #Location="ngModel" required [ngClass]="{'is-invalid' : form.submitted && Location.invalid}">
+          </div>
+        </div>
+       
+        <div class="button">
+          <button type="submit" (click)="register()" ><b>Apply Now</b></button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>

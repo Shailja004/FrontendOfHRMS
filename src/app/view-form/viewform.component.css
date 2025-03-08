@@ -1,0 +1,27 @@
+/* styles.css */
+.grid-container {
+    display: grid;
+   margin-left: 10%;
+    height: 50vh;
+    
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #c2c2c2;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #a3e2d1;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(70, 70, 253);
+}
